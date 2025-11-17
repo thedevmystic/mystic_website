@@ -1,0 +1,67 @@
+# -------------------------
+# 1. Dependency Directories
+# -------------------------
+# Node.js dependencies
+/node_modules
+# Yarn 2/3/4 dependencies
+.yarn/cache
+.yarn/install-state.cjs
+
+# -------------------------
+# 2. Build and Output Folders
+# -------------------------
+# Production build output
+/dist
+/build
+/out
+# Common static asset compilation output
+/public/build
+/public/dist
+# Common temporary directory
+/tmp
+
+# -------------------------
+# 3. Environment Variables
+# -------------------------
+# Never commit secrets or credentials!
+.env
+.env.*
+!.env.example
+.flaskenv
+
+# -------------------------
+# 4. Logs and Test Results
+# -------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Common Jest/Vitest test results
+/coverage
+
+# -------------------------
+# 5. Operating System Files
+# -------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+# macOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+# Linux
+*~
+.#*
+
+# -------------------------
+# 6. IDE and Editor Files
+# -------------------------
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+# Vim swap files
+*.swp
+*.swo
+
