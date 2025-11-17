@@ -1,0 +1,513 @@
+/**
+ * SOURCE CODE                                              * Source code is held under MIT LICENSE.
+ *
+ * Copyright (c) 2025 Suryansh Singh (TheDevMystic)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal                                         in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * ----------------------------------------------------------------------------------------------
+ *
+ * IMPORTANT NOTICE REGARDING PROJECT ASSETS AND CREATIVE WORKS
+ *
+ * While the source code is provided under the MIT License, this license DOES NOT apply to the project's non-code creative materials and assets.
+ *
+ * This includes, without limitation:
+ *
+ * - All images, videos, audio, and media files (e.g., files in /assets/, /images/, /favicons/, /media/, /videos/, /documents/, /public/, /dist/ etc.).
+ * - All logos, trademarks, and brand identity materials.
+ * - All non-code documentation and related research papers (e.g., PDF, DOCX, or separate Markdown files).
+ * - All written contents and creative work (e.g., HTML, etc,).
+ *
+ * These specific materials are held under a separate and restrictive copyright:
+ *
+ * COPYRIGHT (c) 2025 Suryansh Singh (TheDevMystic) All Rights Reserved.
+ *
+ * Any reproduction, modification, or redistribution of the above-listed assets requires the express written permission of the copyright holder.
+ *
+ * THE MIT LICENSE ONLY APPLIES TO THE SOURCE CODE AND DOES NOT EXTEND TO ANY ASSETS OR WRITTEN CONTENT IDENTIFIED IN THE NOTICE ABOVE.
+ *
+ * ----------------------------------------------------------------------------------------------
+ *
+ * @file /src/styles/normalize.css
+ *
+ * @description Modified version of Normalize.css.
+ *
+ * Words of Gratitude :-
+ * Orignal version is wholeheartedly credited to Necolas.
+ * Orginal Work: https://github.com/necolas/normalize.css
+ * Again Thanks Necolas for your amazing groundwork.
+ */
+
+/* Document
+ * ========================================= */
+
+/**
+ * @description Common HTML element fixes.
+ * 1. Sets default font family to sans-serif in all browsers.
+ * 2. Sets default line height to ensure proper rendering.
+ * 3. Prevents adjustments to font sizes in iOS and IE.
+ * 4. Sets font size to 100% for consistency.
+ * 5. Global box sizing to border box.
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.55; /* 2 */
+
+  text-size-adjust: 100%; /* 3 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+
+  font-size: 100%; /* 4 */
+  box-sizing: border-box; /* 5 */
+}
+
+/**
+ * @description Box Sizing Fix.
+ * Box sizing to border box ensures that elements follow box modeling and,
+ * margins and paddings are counted in box element.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * @description Common Body element fixes.
+ * 1. Set margin and padding to zero in all browsers.
+ */
+body {
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+}
+
+/* HTML5 Displays
+ * ========================================= */
+
+/**
+ * @description Add correct display in IE 9-.
+ * 1. Add correct display in Edge, IE and Firefox.
+ * 2. Add correct display in IE.
+ */
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary /* 1 */ {
+  display: block;
+}
+
+/**
+ * @desceiption Add correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * @description Add correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * @description Add correct alignment in Chrome, Opera and Firefox.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * @desceiption Add correct display in IE 10-.
+ * 1. Add correct display in IE.
+ */
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+ * ========================================= */
+
+/**
+ * @description Common Link element fixes.
+ * 1. Remove link background in active links in IE 10.
+ * 2. Remove gaps in link underlines in iOS and Safari.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * @description Remove border in linked images.
+ */
+a img {
+  border: none;
+}
+
+/**
+ * @description Remove outline when links are hovered or active.
+ */
+a:hover,
+a:active {
+  outline-width: 0;
+}
+
+/* Text-level Semantics
+ * ========================================= */
+
+/**
+ * @description Common abbr[title] fixes.
+ * 1. Remove bottom border in all browsers.
+ * 2. Add text decorations in Chrome, Opera, Edge, IE and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * @description Prevents duplicate application of "bolder" in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * @description Add correct font weight in Chrome, Edge and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * @description Add correct font weight in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * @description Common H1 fixes.
+ * 1. Correct font size in Chrome, Firefox and Safari.
+ * 2. Correct margin in Chrome, Firefox and Safari.
+ */
+h1 {
+  font-size: 2em; /* 1 */
+  margin: 0.67rem 0; /* 2 */
+}
+
+/**
+ * @description Common Mark fixes.
+ * 1. Correct background color in IE 9-.
+ * 2. Correct text color in IE 9-.
+ */
+mark {
+  background-color: #ff0; /* 1 */
+  color: #000; /* 2 */
+}
+
+/**
+ * @description Add correct font size for small in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * @description Common Sub and Sup fixes.
+ * 1. Correct font size in all browsers.
+ * 2. Correct line height in all browsers.
+ * 3. Relative positioning in all browsers.
+ * 4. Correct alignment.
+ */
+sub,
+sup {
+  font-size: 75%; /* 1 */
+  line-height: 0; /* 2 */
+  position: relative; /* 3 */
+  vertical-align: baseline; /* 4 */
+}
+
+/**
+ * @description Correct sub placement.
+ */
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * @description Correct sup placement.
+ */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded Content
+ * ========================================= */
+
+/**
+ * @description Removes border on all images.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * @description Hide overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping Content
+ * ========================================= */
+
+/**
+ * @description Common fixes related to kbd, code, pre and samp.
+ * 1. Correct font family.
+ * 2. Correct font size.
+ */
+kbd,
+code,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * @description Add correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * @description Common hr (horizontal rule) fixes.
+ * 1. Add correct box sizing in Firefox.
+ * 2. Show overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+ * ========================================= */
+
+/**
+ * @description Form elements fixes.
+ * 1. Change font family to inherit in all browsers.
+ * 2. Font size to 100%.
+ * 3. Line height to match HTML.
+ * 4. Remove margin in Safari and Firefox.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  line-height: 1.55; /* 3 */
+  margin: 0; /* 4 */
+}
+
+/**
+ * @description Restore font weight unset by previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * @description Show overflows.
+ * 1. In IE.
+ * 2. In Edge.
+ */
+button, /* 1 */
+input /* 2 */ {
+  overflow: visible;
+}
+
+/**
+ * @description Remove text transform inheritence.
+ * 1. In Edge, IE and Firefox.
+ * 2. In Firefox.
+ */
+button, /* 1 */
+select /* 2 */ {
+  text-transform: none;
+}
+
+/**
+ * @description Prevent common bugs.
+ * 1. Bug in WebKit that destroys native audio and video controls in Android 4.
+ * 2. Correct instablity to style in iOS and Safari.
+ */
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * @description Remove border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * @description Restore focus style unset by previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * @description Change border, margin and padding in all browsers.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * @description Common legend fixes.
+ * 1. Add correct text wrapping in Edge and IE.
+ * 2. Correct text inheritamce from fieldset.
+ * 3. Remove padding.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * @description Remove vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * @description Common fixes in IE 10-.
+ * 1. Correct Box sizing.
+ * 2. Correct padding.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * @description Correct height styling in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * @description Search input fixes.
+ * 1. Odd appearance in Chrome and Safari.
+ * 2. Outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * @description Remove inner padding of search buttons in Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * @description Correct textstyle of placeholders in Chrome, Safari and Edge.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * @description Upload button fixes.
+ * 1. Correct the instablity of style in iOS and Safari.
+ * 2. Correct font property to inherit in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * @description Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * @description Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+
