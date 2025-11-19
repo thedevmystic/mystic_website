@@ -1,4 +1,4 @@
-{
+
   "name": "TheDevMystic Website",
   "version": "1.0.0",
   "description": "Personal website created by Surya! Here, come with me on a passionate journey in Math, CS and Logic.",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.22",
     "postcss": "^8.5.6",
-    "postcss-class-apply": "^4.0.1"
+    "tailwindcss": "^4.1.17",
+    "postcss-import": "^16.1.1"
   }
 }
