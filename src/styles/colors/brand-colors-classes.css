@@ -3,6 +3,8 @@
  * @description Brand colors classes for styling alongside TailwindCSS.
  */
 
+@layer utilities {
+
 /* --- Backgrounds --- */
 .bg-base { background-color: var(--color-background-base); }
 .bg-code { background-color: var(--color-background-code); }
@@ -66,3 +68,6 @@
 .syntax-operator { color: var(--color-syntax-operator); }
 .syntax-function { color: var(--color-syntax-function); }
 .syntax-class { color: var(--color-syntax-class); }
+
+}
+

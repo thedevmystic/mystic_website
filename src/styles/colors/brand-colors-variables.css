@@ -3,6 +3,8 @@
  * @description Brand colors for styling alongside TailwindCSS.
  */
 
+@layer base {
+
 /**
  * Variable: Brand Colors (Light Theme)
  * @description Brand color variables for light theme.
@@ -113,3 +115,6 @@
   --color-toolbar-background: #1c2e2b; /** Toolbar Bg (dark) **/
   --color-language-label: #e0e0e0;     /** Language Label Text (dark) **/
 }
+
+}
+
