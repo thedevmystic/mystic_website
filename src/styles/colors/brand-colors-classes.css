@@ -19,18 +19,30 @@
 .text-button { color: var(--color-text-button); }
 .text-label { color: var(--color-language-label); }
 
+/* --- State/Interaction --- */
+.text-hover:hover { color: var(--color-text-hover); }
+.bg-hover:hover { background-color: var(--color-text-hover); }
+
+/* Focus styles typically use accent for accessibility */
+.text-focus:focus { color: var(--color-text-focus); }
+.bg-focus:focus { background-color: var(--color-text-focus); }
+.border-focus:focus { border-color: var(--color-text-focus); }
+
 /* --- Accent & Feedback --- */
 .bg-accent { background-color: var(--color-accent); }
-.text-accent { color: var(--color-accent); }
-.border-accent { border-color: var(--color-accent); }
-
 .bg-success { background-color: var(--color-feedback-success); }
 .bg-warning { background-color: var(--color-feedback-warning); }
 .bg-failure { background-color: var(--color-feedback-failure); }
 
+.text-accent { color: var(--color-accent); }
 .text-success { color: var(--color-feedback-success); }
 .text-warning { color: var(--color-feedback-warning); }
 .text-failure { color: var(--color-feedback-failure); }
+
+.border-accent { border-color: var(--color-accent); }
+.border-success { border-color: var(--color-feedback-success); }
+.border-warning { border-color: var(--color-feedback-warning); }
+.border-failure { border-color: var(--color-feedback-failure); }
 
 /* --- Shadow --- */
 .shadow-base {
