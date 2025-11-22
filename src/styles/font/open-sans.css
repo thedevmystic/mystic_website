@@ -1,0 +1,46 @@
+/**
+ * @file src/styles/fonts/open-sans.css
+ *
+ * @description Open Sans font declaration.
+ */
+
+/**
+ * Font: Open Sans
+ * Feature: Humanist Sans, high legiblity.
+ *
+ * @description Font face declaration of Open Sans.
+ */
+
+/* Normal */
+@font-face {
+  /* Font family name */
+  font-family: "Open Sans";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/open-sans/open-sans-normal-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/open-sans/open-sans-normal-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/open-sans/open-sans-normal-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "Open Sans";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/open-sans/open-sans-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/open-sans/open-sans-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/open-sans/open-sans-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
