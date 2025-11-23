@@ -11,11 +11,6 @@
  * @description Main input css file.
  */
 
-/** TailwindCSS Imports. **/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /** Brand Colors and Utility Classes. **/
 @import "./colors/brand-colors-variables.css";
 @import "./colors/brand-colors-classes.css";
@@ -58,4 +53,9 @@
 @import "./components/search.css";
 @import "./components/pagination.css";
 @import "./components/pillbar.css";
+
+/** TailwindCSS Imports. **/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
