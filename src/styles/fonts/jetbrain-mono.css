@@ -1,0 +1,46 @@
+/**
+ * @file src/styles/fonts/jetbrains-mono.css
+ *
+ * @description JetBrains Mono font declaration.
+ */
+
+/**
+ * Font: JetBrains Mono
+ * Feature: Developer Sans Monospace font, high legiblity.
+ *
+ * @description Font face declaration of JetBrains Mono.
+ */
+
+/* Normal */
+@font-face {
+  /* Font family name */
+  font-family: "JetBrains Mono";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/jetbrains-mono/jetbrains-mono-normal-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/jetbrains-mono/jetbrains-mono-normal-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/jetbrains-mono/jetbrains-mono-normal-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "JetBrains Mono";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/jetbrains-mono/jetbrains-mono-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/jetbrains-mono/jetbrains-mono-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/jetbrains-mono/jetbrains-mono-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
