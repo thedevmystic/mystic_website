@@ -1,0 +1,204 @@
+/**
+ * @file src/styles/fonts/montserrat-fallback.css
+ *
+ * @description Fallback Montserrat font declaration.
+ */
+
+/**
+ * Font: Montserrat Fallback
+ *
+ * @description Fallback font face declaration of Montserrat.
+ * This fallback font uses Arial, then fine tune it for ZLS (Zero Layout Shift).
+ */
+
+/* Normal */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat Fallback";
+  /* Static Font */
+  font-weight: 400;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Metrics for ZLS */
+  /* Size adjust */
+  size-adjust: 99.8070%;
+  /* Ascent override */
+  ascent-override: 96.8%;
+  /* Descent override */
+  descent-override: 25.1%;
+  /* Line gap override */
+  line-gap-override: 0%;
+
+  /* Font files, here using metric equivalent font as our calculation depends on metrics.  */
+  src: 
+       /* Offical PS name */
+       local("Arial"), /* PS name */
+       local("ArialRegular"), /* PS alternate name */
+       
+       /* Windows */
+       local("Arial Regular"), /* Windows and General */
+       local("Arial-Regular"), /* Windows alternate name */
+
+       /* macOS & iOS */
+       local("ArialMT"), /* macOS & iOS */
+       local("Arial-RegularMT"), /* macOS & iOS PS alternate name */
+       local("ArialMT Regular"), /* macOS & iOS PS alternate name */
+
+       /* Linux */
+       local("Liberation Sans"), /* Linux */
+       local("LiberationSans"), /* Linux PS alternate name */
+       local("LiberationSans-Regular"), /* Linux alternate name */
+       
+       /* Android */
+       local("Arimo"), /* Android */
+       local("Arimo-Regular"), /* Android PS alternate name */
+       local("Arimo Regular"); /* Android alternate name */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat Fallback";
+  /* Static Font */
+  font-weight: 400;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Metrics for ZLS */
+  /* Size adjust */
+  size-adjust: 99.8402%;
+  /* Ascent override */
+  ascent-override: 96.8%;
+  /* Descent override */
+  descent-override: 25.1%;
+  /* Line gap override */
+  line-gap-override: 0%;
+
+  /* Font files, here using metric equivalent font as our calculation depends on metrics.  */
+  src: 
+       /* Offical PS names */
+       local("Arial-Italic"), /* PS name */
+       local("ArialItalic"), /* PS alternate name */
+       
+       /* Windows */
+       local("Arial Italic"), /* Windows and General */
+       local("Arial Regular Italic"), /* Windows alternate name */
+       local("Arial Regular"), /* Sometimes on Windows Arial is registered without Italic but with style as italic. */
+       local("ArialRegularItalic"), /* Highly rare but possible name */
+
+       /* maxOS & iOS */
+       local("ArialMT Italic"), /* Common macOS & iOS */
+       local("Arial-ItalicMT"), /* macOS & iOS PS alternate name */
+       local("Arial-Regular-ItalicMT"), /* macOS & iOS alternate name */
+       
+       /* Linux */
+       local("Liberation Sans Italic"), /* Linux */
+       local("LiberationSansItalic"), /* Linux PS alternate name */
+       local("LiberationSans-Italic"), /* Linux alternate name */
+       
+       /* Android */
+       local("Arimo Italic"), /* Android */
+       local("ArimoItalic"), /* Android PS alternate name */
+       local("Arimo-Italic"); /* Android alternative name */
+}
+
+/* Bold */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat Fallback";
+  /* Static Font */
+  font-weight: 700;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Metrics for ZLS */
+  /* Size adjust */
+  size-adjust: 101.3721%;
+  /* Ascent override */
+  ascent-override: 96.8%;
+  /* Descent override */
+  descent-override: 25.1%;
+  /* Line gap override */
+  line-gap-override: 0%;
+
+  /* Font files, here using metric equivalent font as our calculation depends on metrics.  */
+  src: 
+       /* Offical PS name */
+       local("ArialBold"), /* PS name */
+       local("Arial-Bold"), /* PS alternate name */
+       
+       /* Windows */
+       local("Arial Bold"), /* Windows and General */
+       local("ArialBd"), /* Windows alternate name */
+
+       /* macOS & iOS */
+       local("ArialBoldMT"), /* macOS & iOS */
+       local("Arial-BoldMT"), /* macOS & iOS PS alternate name */
+       local("ArialMT Bold"), /* macOS & iOS PS alternate name */
+
+       /* Linux */
+       local("Liberation Sans Bold"), /* Linux */
+       local("LiberationSansBold"), /* Linux PS alternate name */
+       local("LiberationSans-Bold"), /* Linux alternate name */
+       
+       /* Android */
+       local("Arimo Bold"), /* Android */
+       local("Arimo-Bold"), /* Android PS alternate name */
+       local("ArimoBold"); /* Android alternate name */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat Fallback";
+  /* Static Font */
+  font-weight: 700;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Metrics for ZLS */
+  /* Size adjust */
+  size-adjust: 101.4115%;
+  /* Ascent override */
+  ascent-override: 96.8%;
+  /* Descent override */
+  descent-override: 25.1%;
+  /* Line gap override */
+  line-gap-override: 0%;
+
+  /* Font files, here using metric equivalent font as our calculation depends on metrics.  */
+  src: 
+       /* Offical PS names */
+       local("ArialBold-Italic"), /* PS name */
+       local("ArialBoldItalic"), /* PS alternate name */
+       
+       /* Windows */
+       local("Arial Bold Italic"), /* Windows and General */
+       local("ArialBold Italic"), /* Windows alternate name */
+       local("Arial-Bold-Italic"), /* Sometimes on Windows Arial is registered without Italic but with style as italic. */
+       local("Arial-Bold Italic"), /* Highly rare but possible name */
+
+       /* maxOS & iOS */
+       local("ArialBoldMT Italic"), /* Common macOS & iOS */
+       local("ArialBold-ItalicMT"), /* macOS & iOS PS alternate name */
+       local("Arial-Bold-ItalicMT"), /* macOS & iOS alternate name */
+       
+       /* Linux */
+       local("Liberation Sans Bold Italic"), /* Linux */
+       local("LiberationSansBoldItalic"), /* Linux PS alternate name */
+       local("LiberationSansBold-Italic"), /* Linux alternate name */
+       
+       /* Android */
+       local("Arimo Bold Italic"), /* Android */
+       local("ArimoBoldItalic"), /* Android PS alternate name */
+       local("ArimoBold-Italic"); /* Android alternative name */
+}
