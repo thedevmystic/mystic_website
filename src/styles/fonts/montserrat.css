@@ -1,0 +1,46 @@
+/**
+ * @file src/styles/fonts/montserrat.css
+ *
+ * @description Montserrat font declaration.
+ */
+
+/**
+ * Font: Montserrat
+ * Feature: Geometric Sans, high legiblity.
+ *
+ * @description Font face declaration of Montserrat.
+ */
+
+/* Normal */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/montserrat/montserrat-normal-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/montserrat/montserrat-normal-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/montserrat/montserrat-normal-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "Montserrat";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/montserrat/montserrat-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/montserrat/montserrat-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/montserrat/montserrat-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
