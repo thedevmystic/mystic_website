@@ -1,0 +1,31 @@
+/**
+ * @file /src/styles/fluid/fluid-typescales-variables.css
+ * @description Variables for fluid typescale.
+ */
+
+@layer base {
+
+/**
+ * Variables: Fluid Typescale
+ * @description Utopia-based fluid typescales with some overrides.
+ */
+:root {
+  /* Step -2: 12px -> 14px */
+  --step--2: clamp(0.75rem, 0.18rem + 0.1786vw, 0.875rem);
+  /* Step -1: 13.3333px -> 15.0038px */
+  --step--1: clamp(0.8333rem, 0.8035rem + 0.1491vw, 0.9377rem);
+  /* Step 0: 16px -> 20px */
+  --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  /* Step 1: 19.2px -> 26.66px */
+  --step-1: clamp(1.2rem, 1.0668rem + 0.6661vw, 1.6663rem);
+  /* Step 2: 23.04px -> 35.5378px */
+  --step-2: clamp(1.44rem, 1.2168rem + 1.1159vw, 2.2211rem);
+  /* Step 3: 27.648px -> 47.3719px */
+  --step-3: clamp(1.728rem, 1.3758rem + 1.7611vw, 2.9607rem);
+  /* Step 4: 33.1776px -> 63.1467px */
+  --step-4: clamp(2.0736rem, 1.5384rem + 2.6758vw, 3.9467rem);
+  /* Step 5: 39.8131px -> 84.1745px */
+  --step-5: clamp(2.4883rem, 1.6962rem + 3.9608vw, 5.2609rem);
+}
+
+}
