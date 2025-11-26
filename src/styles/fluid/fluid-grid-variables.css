@@ -1,0 +1,21 @@
+/**
+ * @file /src/styles/fluid/fluid-grid-variables.css
+ * @description Variables for fluid grid.
+ */
+
+@layer base {
+
+/**
+ * Variables: Fluid Grid
+ * @description Utopia-based fluid grid.
+ */
+:root {
+  /* Max grid width: 1440px / 16 = 90rem */
+  --grid-max-width: 90rem;
+  /* Gutter width: 16px -> 40px */
+  --grid-width: var(--space-s-l, clamp(1rem, 0.5714rem + 2.1429vw, 2.5rem));
+  /* Number of columns: 12 */
+  --grid-columns: 12;
+}
+
+}
