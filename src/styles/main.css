@@ -17,7 +17,6 @@
 
 /** Fluid Typescales, spaces and Grid. **/
 @import "./fluid/fluid-typescales-variables.css";
-@import "./fluid/fluid-typescales-variables.css";
 @import "./fluid/fluid-spaces-variables.css";
 @import "./fluid/fluid-grid-variables.css";
 @import "./fluid/line-height-variables.css";
