@@ -1,0 +1,40 @@
+/**
+ * @file /src/styles/fluid/fluid-grid-classes.css
+ * @description Utility classes for fluid grid container and layout.
+ * These utilities use the grid variables defined below.
+ */
+
+@layer utilities {
+
+/**
+* Utility: .container-fluid
+* Sets max width and applies fluid padding (gutter width) to the sides.
+*/
+.container-fluid {
+/* 1. Center the content */
+margin-left: auto;
+margin-right: auto;
+
+/* 2. Set max width (e.g., 1440px) */
+max-width: var(--grid-max-width);
+
+/* 3. Apply fluid padding equal to the gutter width */
+padding-left: var(--grid-width);
+padding-right: var(--grid-width);
+}
+
+/**
+* Utility: .grid-fluid
+* Sets up a 12-column grid with a fluid gap.
+*/
+.grid-fluid {
+display: grid;
+
+/* Define 12 equal-width columns */
+grid-template-columns: repeat(var(--grid-columns), 1fr);
+
+/* Apply the fluid gutter width as the grid gap */
+gap: var(--grid-width);
+}
+
+}
