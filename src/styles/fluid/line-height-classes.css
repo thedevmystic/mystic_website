@@ -1,0 +1,13 @@
+/**
+ * @file /src/styles/fluid/line-height-variables.css
+ * @description Classes for line heights.
+ */
+
+@layer utilities {
+
+/** Line height classes. **/
+.lh-body { line-height: var(--line-height-body); }
+.lh-code { line-height: var(--line-height-code); }
+.lh-heading { line-height: var(--line-height-heading); }
+
+}
