@@ -1,0 +1,18 @@
+/**
+ * @file /src/styles/fluid/fluid-typescales-variables.css
+ * @description Variables for fluid typescale.
+ */
+
+@layer utilities {
+
+/** Fluid Typescale classes **/
+.fluid-text-2xs { font-size: var(--step--2); }
+.fluid-text-xs { font-size: var(--step--1); }
+.fluid-text-s { font-size: var(--step-0); }
+.fluid-text-m { font-size: var(--step-1); }
+.fluid-text-l { font-size: var(--step-2); }
+.fluid-text-xl { font-size: var(--step-3); }
+.fluid-text-2xl { font-size: var(--step-4); }
+.fluid-text-3xl { font-size: var(--step-5); }
+
+}
