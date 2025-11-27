@@ -1,0 +1,124 @@
+/**
+ * @file src/styles/fonts/font-stack.css
+ *
+ * @description Variables file for font stack.
+ */
+
+@layer base {
+
+/**
+ * Variables: Font Stacks
+ *
+ * @description Variables for font stacks.
+ */
+:root {
+  /* Body font stack :-
+   * Main font :- Open Sans
+   * Fallback  :- Open Sans Fallback
+   * Others    :- system-ui, explicit fonts selected by system-ui
+   *              if it fails (for every system).
+   * Final     :- sans-serif
+   */
+  --font-stack-body:
+    /* Main font */
+    "Open Sans",
+    /* ZLS fallback font */
+    "Open Sans Fallback",
+    /* Generic system font */
+    system-ui,
+    /* macOS system font */
+    -apple-system, BlinkMacSystemFont,
+    /* Windows system font */
+    "Segoe UI",
+    /* Linux system font */
+    "Ubuntu", "Cantarell", "Fira Sans", "DejaVu Sans",
+    /* Android system font */
+    "Roboto", "Noto Sans",
+    /* Generics */
+    "Helvetica", "Arial",
+    /* Final fallback */
+    sans-serif;
+
+  /* Heading font stack :-
+   * Main font :- Montserrat
+   * Fallback  :- Montserrat Fallback
+   * Others    :- system-ui, explicit fonts selected by system-ui
+   *              if it fails (for every system).
+   * Final     :- sans-serif
+   */
+  --font-stack-heading:
+    /* Main font */
+    "Montserrat",
+    /* ZLS fallback font */
+    "Montserrat Fallback",
+    /* Generic system font */
+    system-ui,
+    /* macOS system font */
+    -apple-system, BlinkMacSystemFont,
+    /* Windows system font */
+    "Segoe UI",
+    /* Linux system font */
+    "Ubuntu", "Cantarell", "Fira Sans", "DejaVu Sans",
+    /* Android system font */
+    "Roboto", "Noto Sans",
+    /* Generics */
+    "Helvetica", "Arial",
+    /* Final fallback */
+    sans-serif;
+
+  /* Monospace font stack :-
+   * Main font :- JetBrains Mono
+   * Fallback  :- JetBrains Mono Fallback
+   * Others    :- ui-monospace, explicit fonts selected by ui-monospace
+   *              if it fails (for every system).
+   * Final     :- monospace
+   */
+  --font-stack-mono:
+    /* Main font */
+    "JetBrains Mono",
+    /* ZLS fallback font */
+    "JetBrains Mono Fallback",
+    /* Generic system font */
+    ui-monospace,
+    /* macOS system font */
+    "SF Mono", "Menlo", "Monaco",
+    /* Windows system font */
+    "Segoe UI Mono", "Cascadia Code", "Consolas",
+    /* Linux system font */
+    "Ubuntu Mono", "Fira Code", "Source Code Pro", "DejaVu Sans Mono",
+    /* Android system font */
+    "Roboto Mono", "Noto Sans Mono",
+    /* Generics */
+    "Courier New", "Courier",
+    /* Final fallback */
+    monospace;
+
+  /* Math font stack :-
+   * Main font :- Noto Math
+   * Fallback  :- Open Sans, Open Sans Fallback
+   * Others    :- system-ui, explicit fonts selected by system-ui
+   *              if it fails (for every system).
+   * Final     :- sans-serif
+   */
+  --font-stack-body:
+    /* Main font */
+    "Noto Math",
+    /* Fallback font */
+    "Open Sans", "Open Sans Fallback",
+    /* Generic system font */
+    system-ui,
+    /* macOS system font */
+    -apple-system, BlinkMacSystemFont,
+    /* Windows system font */
+    "Segoe UI",
+    /* Linux system font */
+    "Ubuntu", "Cantarell", "Fira Sans", "DejaVu Sans",
+    /* Android system font */
+    "Roboto", "Noto Sans",
+    /* Generics */
+    "Helvetica", "Arial",
+    /* Final fallback */
+    sans-serif;
+}
+
+}
