@@ -1,0 +1,23 @@
+# Tells all bots (Google, Bing, etc.) that follow robots.txt rules
+
+User-agent: *
+
+# Allow crawling for the entire site by default
+Allow: /
+
+# Disallow specific pages, directories, or files:
+
+# 1. Disallow the entire 'private' folder
+Disallow: /private/
+
+# 2. Disallow a single specific page (e.g., a test page)
+Disallow: /test-page.html
+
+# 3. Disallow all files that start with 'draft-'
+Disallow: /draft-*.html
+
+# 4. Disallow 404 Page
+Disallow: /404.html
+
+# 4. Point to the location of your XML Sitemap
+Sitemap: https://thedevmystic.github.io/mystic_website/sitemap_index.xml
