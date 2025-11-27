@@ -1,0 +1,15 @@
+/**
+ * @file src/styles/fonts/font-stack-classes.css
+ *
+ * @description Clasees file for font stack.
+ */
+
+@layer base {
+
+/* Font stack classes */
+.font-body { font-family: var(--font-stack-body); }
+.font-code { font-family: var(--font-stack-code); }
+.font-math { font-family: var(--font-stack-math); }
+.font-heading { font-family: var(--font-stack-heading); }
+
+}

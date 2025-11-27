@@ -1,5 +1,5 @@
 /**
- * @file src/styles/fonts/font-stack.css
+ * @file src/styles/fonts/font-stack-variables.css
  *
  * @description Variables file for font stack.
  */
@@ -100,7 +100,7 @@
    *              if it fails (for every system).
    * Final     :- sans-serif
    */
-  --font-stack-body:
+  --font-stack-math:
     /* Main font */
     "Noto Math",
     /* Fallback font */
