@@ -4,6 +4,8 @@
  * @description Montserrat font declaration.
  */
 
+@layer base {
+
 /**
  * Font: Montserrat
  * Feature: Geometric Sans, high legiblity.
@@ -43,4 +45,6 @@
   src: url("/fonts/montserrat/montserrat-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
        url("/fonts/montserrat/montserrat-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
        url("/fonts/montserrat/montserrat-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
 }

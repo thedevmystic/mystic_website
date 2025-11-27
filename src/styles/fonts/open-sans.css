@@ -4,6 +4,8 @@
  * @description Open Sans font declaration.
  */
 
+@layer base {
+
 /**
  * Font: Open Sans
  * Feature: Humanist Sans, high legiblity.
@@ -43,4 +45,6 @@
   src: url("/fonts/open-sans/open-sans-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
        url("/fonts/open-sans/open-sans-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
        url("/fonts/open-sans/open-sans-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
 }

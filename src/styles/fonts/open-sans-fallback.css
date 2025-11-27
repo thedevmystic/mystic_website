@@ -4,6 +4,8 @@
  * @description Fallback Open Sans font declaration.
  */
 
+@layer base {
+
 /**
  * Font: Open Sans Fallback
  *
@@ -201,4 +203,6 @@
        local("Arimo Bold Italic"), /* Android */
        local("ArimoBoldItalic"), /* Android PS alternate name */
        local("ArimoBold-Italic"); /* Android alternative name */
+}
+
 }
