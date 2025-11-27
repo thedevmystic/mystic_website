@@ -1,0 +1,50 @@
+/**
+ * @file src/styles/fonts/noto-math.css
+ *
+ * @description Noto Math font declaration.
+ */
+
+@layer base {
+
+/**
+ * Font: Noto Math
+ * Feature: A cool sans math font.
+ *
+ * @description Font face declaration of Noto Math.
+ */
+
+/* Normal */
+@font-face {
+  /* Font family name */
+  font-family: "Noto Math";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: normal;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/noto-math/noto-math-normal-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/noto-math/noto-math-normal-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/noto-math/noto-math-normal-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
+/* Italic */
+@font-face {
+  /* Font family name */
+  font-family: "Noto Math";
+  /* Variable Font */
+  font-weight: 400 700;
+  /* Style */
+  font-style: italic;
+  /* Modern preferred display, priortizing UX via FOUT. */ 
+  font-display: swap;
+  
+  /* Font files */
+  src: url("/fonts/noto-math/noto-math-italic-vf.woff2") format("woff2-variations"),    /* Modern preferred, least size. */
+       url("/fonts/noto-math/noto-math-italic-vf.woff")  format("woff-variations"),     /* Stable and widely supported.  */
+       url("/fonts/noto-math/noto-math-italic-vf.ttf")   format("truetype-variations"); /* Least preferred, high size.   */
+}
+
+}
