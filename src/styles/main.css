@@ -37,33 +37,6 @@
 @import "./font/font-stack-variables.css";
 @import "./font/font-stack-classes.css";
 
-/** Typography. **/
-@import "./typography/html.css";
-@import "./typography/body.css";
-@import "./typography/heading.css";
-@import "./typography/paragraph.css";
-@import "./typography/code.css";
-@import "./typography/list.css";
-@import "./typography/link.css";
-@import "./typography/blockquote.css";
-@import "./typography/caption.css";
-@import "./typography/feature.css";
-@import "./typography/table.css";
-
-/** Header, Body and Footer wrappers. **/
-@import "./wrappers/site-header.css";
-@import "./wrappers/site-body.css";
-@import "./wrappers/site-footer.css";
-
-/** Components. **/
-@import "./components/button.css";
-@import "./components/card.css";
-@import "./components/code-toolbox.css";
-@import "./components/navigation-bar.css";
-@import "./components/search.css";
-@import "./components/pagination.css";
-@import "./components/pillbar.css";
-
 /** TailwindCSS Imports. **/
 @tailwind base;
 @tailwind components;

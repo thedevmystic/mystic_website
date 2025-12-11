@@ -1,4 +1,4 @@
-
+{
   "name": "TheDevMystic Website",
   "version": "1.0.0",
   "description": "Personal website created by Surya! Here, come with me on a passionate journey in Math, CS and Logic.",
@@ -11,7 +11,7 @@
 
   "author": {
     "name": "Suryansh Singh",
-    "email": "suryansh.singh.creates@gmail.com",
+    "email": "thedevmystic@gmail.com",
     "url": "https://thedevmystic.github.io"
   },
 
